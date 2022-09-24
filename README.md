@@ -1,4 +1,4 @@
-**Este é um repositório púbico associado ao desenvolvimento de uma** *Descentralize Autonomous Organization* **(DAO) caracterizada no projeto:** 
+**This is a pubic repository associated with the development of a** *Decentralize Autonomous Organization* **(DAO) caracterizada no projeto:** 
 
 - **Texto em português:** [https://doi.org/10.31219/osf.io/xcpsd](https://doi.org/10.31219/osf.io/xcpsd "Projeto para o Desenvolvimento de um Artigo sobre Governança de Algoritmos e Dados")
 
