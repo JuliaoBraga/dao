@@ -6,5 +6,5 @@
 
 You can follow the project through:
 
-1. **Public environment of the project:** [https://doi.org/10.17605/OSF.IO/K35FV](https://doi.org/10.17605/OSF.IO/K35FV target=_blank)
-2. **Through Discord (invite):** [https://discord.gg/nMUdgeUT](https://discord.gg/nMUdgeUT target=_blank)
+1. **Public environment of the project:** [https://doi.org/10.17605/OSF.IO/K35FV target=_blank](https://doi.org/10.17605/OSF.IO/K35FV)
+2. **Through Discord (invite):** [https://discord.gg/nMUdgeUT target=_blank](https://discord.gg/nMUdgeUT)
