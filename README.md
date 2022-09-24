@@ -13,5 +13,5 @@ Active project members:
 
 1. Francisco Regateiro: [ORCID](https://orcid.org/0000-0003-2229-4938), [CV](https://fenix.tecnico.ulisboa.pt/homepage/ist13522)
 2. Itana Stiubiener: [ORCID](https://orcid.org/0000-0002-7149-4760), [Lattes](http://lattes.cnpq.br/4008970012663480)
-3. Juliana Cristina Braga: [ORCID](https://orcid.org/0000-0003-2385-0051), 
+3. Juliana Cristina Braga: [ORCID](https://orcid.org/0000-0003-2385-0051), [Lattes](http://lattes.cnpq.br/7111526592323456)
 4. Juliao Braga: [ORCID](https://orcid.org/0000-0001-9542-3732), [Lattes](http://lattes.cnpq.br/7092085044582071), [CV](http://braga.net.br)
