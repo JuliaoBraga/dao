@@ -1,5 +1,4 @@
-@prefix : <http://ghaia.pt/kb/> .
-@prefix dao: <https://ghaia.pt/kb/dao#> .
+@prefix : <http://ghaia.pt/kb/decom#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,19 +6,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdfs1: <http://braga.net.br/ontologies/2022/9/dao#rdfs:> .
 @prefix rdfs2: <http://ghaia.pt/ontologies/2022/9/dao#rdfs:> .
-@base <http://ghaia.pt/kb/> .
+@base <http://ghaia.pt/kb/decom#> .
 
-<http://ghaia.pt/kb/> rdf:type owl:Ontology ;
-                       rdfs:comment """This knowledge base (KB), built under Protégé (https://protege.stanford.edu/). In its embryonic phase it is oriented to DAOs and their Tools. 
+<http://ghaia.pt/kb/decom#> rdf:type owl:Ontology ;
+                             rdfs:comment """This knowledge base (KB), built under Protégé (https://protege.stanford.edu/). In its embryonic phase it is oriented to DAOs and their Tools. 
 
 References: 
 1. DAO Masters: https://www.daomasters.xyz/
 2. The Ultimate DAO Report: https://bit.ly/DAOSurvey-02
-3. Many others
+3. https://zapper.xyz/pt/daos
+4. Many others
 
 The proposal for the construction of this KB is a continuation of the project proposed at the Oscar Sala Catedra, at the Institute for Advanced Studies of the University of São Paulo, under the coordination of Prof. Dr. Virgílio Almeida.""" ;
-                       rdfs:isDefinedBy "https://osf.io/sr7kt/"^^xsd:anyURI ;
-                       rdfs:overview """This KB is under constant development by: 
+                             rdfs:isDefinedBy "https://osf.io/sr7kt/"^^xsd:anyURI ;
+                             rdfs:overview """This KB is under constant development by: 
 
 Dr. Juliao Braga, UFABC, BR
 Dr. Francisco Regateiro, IST, PT
@@ -27,7 +27,7 @@ Dr. Itana Stiubiener, UFABC, PT
 Dr. Juliana Cristina Braga, UFABC, BR
 
 Informations -> info at ghaia dot pt""" ;
-                       owl:versionInfo "1.0.5" .
+                             owl:versionInfo "1.0.6" .
 
 #################################################################
 #    Annotation properties
@@ -322,8 +322,8 @@ rdfs:youtube rdf:type owl:AnnotationProperty .
 
 
 ###  http://ghaia.pt/kb/TokenCreation
-:TokenCreation rdf:type owl:Class ;
-               rdfs:subClassOf <http://ghaia.pt/ontologies/2022/9/dao#Tool> .
+<http://ghaia.pt/kb/TokenCreation> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://ghaia.pt/ontologies/2022/9/dao#Tool> .
 
 
 ###  http://ghaia.pt/ontologies/2022/9/dao#AcronymMeaning
@@ -1283,7 +1283,7 @@ C4 audit contests are different from both bug bounties and traditional audits.""
 
 ###  http://braga.net.br/ontologies/2022/9/dao#Coinvise
 <http://braga.net.br/ontologies/2022/9/dao#Coinvise> rdf:type owl:NamedIndividual ,
-                                                              :TokenCreation ,
+                                                              <http://ghaia.pt/kb/TokenCreation> ,
                                                               <http://ghaia.pt/ontologies/2022/9/dao#Contribution&Compensation> ;
                                                      rdfs:discord "https://discord.com/channels/772466582487564289/772466582487564293" ;
                                                      rdfs:isDefinedBy """https://www.daomasters.xyz/tools/coinvise 
@@ -2176,7 +2176,7 @@ https://www.fwb.help/""" ;
 
 ###  http://braga.net.br/ontologies/2022/9/dao#Gardens
 <http://braga.net.br/ontologies/2022/9/dao#Gardens> rdf:type owl:NamedIndividual ,
-                                                             :TokenCreation ,
+                                                             <http://ghaia.pt/kb/TokenCreation> ,
                                                              <http://ghaia.pt/ontologies/2022/9/dao#Governance&Voting> ;
                                                     rdfs2:github "https://github.com/1hive/gardens" ;
                                                     rdfs:discord "https://discord.gg/4fm7pgB" ;
@@ -3117,7 +3117,7 @@ There are a few web3 solutions tha""" ;
 
 ###  http://braga.net.br/ontologies/2022/9/dao#Mirror
 <http://braga.net.br/ontologies/2022/9/dao#Mirror> rdf:type owl:NamedIndividual ,
-                                                            :TokenCreation ,
+                                                            <http://ghaia.pt/kb/TokenCreation> ,
                                                             <http://ghaia.pt/ontologies/2022/9/dao#Fundraising> ,
                                                             <http://ghaia.pt/ontologies/2022/9/dao#Marketing> ;
                                                    rdfs:documentation "https://dev.mirror.xyz/" ;
@@ -3483,7 +3483,7 @@ https://own.fund/#/home""" ;
 
 ###  http://braga.net.br/ontologies/2022/9/dao#POAP
 <http://braga.net.br/ontologies/2022/9/dao#POAP> rdf:type owl:NamedIndividual ,
-                                                          :TokenCreation ;
+                                                          <http://ghaia.pt/kb/TokenCreation> ;
                                                  rdfs2:github "https://github.com/poap-xyz" ;
                                                  rdfs:discord "https://discord.gg/fcxW4yR" ;
                                                  rdfs:isDefinedBy """https://www.daomasters.xyz/tools/poap 
@@ -3935,7 +3935,7 @@ veRBN carries additional voting powers such as gauge voting and entitles the hol
 
 ###  http://braga.net.br/ontologies/2022/9/dao#Roll
 <http://braga.net.br/ontologies/2022/9/dao#Roll> rdf:type owl:NamedIndividual ,
-                                                          :TokenCreation ;
+                                                          <http://ghaia.pt/kb/TokenCreation> ;
                                                  rdfs2:github "https://github.com/poap-xyz" ;
                                                  rdfs:discord "https://discord.gg/fcxW4yR" ;
                                                  rdfs:isDefinedBy """https://www.daomasters.xyz/tools/poap 
@@ -5104,114 +5104,114 @@ https://p.network/""" ;
 
 
 ###  http://ghaia.pt/kb/CedgeDAO
-:CedgeDAO rdf:type owl:NamedIndividual ,
-                   <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/CedgeDAO> rdf:type owl:NamedIndividual ,
+                                       <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/Colletor
-:Colletor rdf:type owl:NamedIndividual ,
-                   <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
+<http://ghaia.pt/kb/Colletor> rdf:type owl:NamedIndividual ,
+                                       <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
 
 
 ###  http://ghaia.pt/kb/DAOSquare
-:DAOSquare rdf:type owl:NamedIndividual ,
-                    <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/DAOSquare> rdf:type owl:NamedIndividual ,
+                                        <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/DoingUd
-:DoingUd rdf:type owl:NamedIndividual ,
-                  <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/DoingUd> rdf:type owl:NamedIndividual ,
+                                      <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/FlowCommunity
-:FlowCommunity rdf:type owl:NamedIndividual ,
-                        <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/FlowCommunity> rdf:type owl:NamedIndividual ,
+                                            <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/GeorgeLi
-:GeorgeLi rdf:type owl:NamedIndividual ,
-                   <http://braga.net.br/ontologies/2022/9/dao#Person> ;
-          <http://ghaia.pt/ontologies/2022/9/dao#isCoFounderOf> <http://braga.net.br/ontologies/2022/9/dao#VentureDAO> .
+<http://ghaia.pt/kb/GeorgeLi> rdf:type owl:NamedIndividual ,
+                                       <http://braga.net.br/ontologies/2022/9/dao#Person> ;
+                              <http://ghaia.pt/ontologies/2022/9/dao#isCoFounderOf> <http://braga.net.br/ontologies/2022/9/dao#VentureDAO> .
 
 
 ###  http://ghaia.pt/kb/GitcoinDAO
-:GitcoinDAO rdf:type owl:NamedIndividual ,
-                     <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/GitcoinDAO> rdf:type owl:NamedIndividual ,
+                                         <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/Grants
-:Grants rdf:type owl:NamedIndividual ,
-                 <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
+<http://ghaia.pt/kb/Grants> rdf:type owl:NamedIndividual ,
+                                     <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
 
 
 ###  http://ghaia.pt/kb/HistoriansDAO
-:HistoriansDAO rdf:type owl:NamedIndividual ,
-                        <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/HistoriansDAO> rdf:type owl:NamedIndividual ,
+                                            <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/MarrowDAO
-:MarrowDAO rdf:type owl:NamedIndividual ,
-                    <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/MarrowDAO> rdf:type owl:NamedIndividual ,
+                                        <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/Media
-:Media rdf:type owl:NamedIndividual ,
-                <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
+<http://ghaia.pt/kb/Media> rdf:type owl:NamedIndividual ,
+                                    <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
 
 
 ###  http://ghaia.pt/kb/MetaGame
-:MetaGame rdf:type owl:NamedIndividual ,
-                   <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/MetaGame> rdf:type owl:NamedIndividual ,
+                                       <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/OperatingSystem
-:OperatingSystem rdf:type owl:NamedIndividual ,
-                          <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
+<http://ghaia.pt/kb/OperatingSystem> rdf:type owl:NamedIndividual ,
+                                              <http://ghaia.pt/ontologies/2022/9/dao#DAOEcosystem> .
 
 
 ###  http://ghaia.pt/kb/QIDAO
-:QIDAO rdf:type owl:NamedIndividual ,
-                <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/QIDAO> rdf:type owl:NamedIndividual ,
+                                    <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/Ramp
-:Ramp rdf:type owl:NamedIndividual ,
-               <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/Ramp> rdf:type owl:NamedIndividual ,
+                                   <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/ThirdWeb
-:ThirdWeb rdf:type owl:NamedIndividual ,
-                   :TokenCreation .
+<http://ghaia.pt/kb/ThirdWeb> rdf:type owl:NamedIndividual ,
+                                       <http://ghaia.pt/kb/TokenCreation> .
 
 
 ###  http://ghaia.pt/kb/TripsCommunity
-:TripsCommunity rdf:type owl:NamedIndividual ,
-                         <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/TripsCommunity> rdf:type owl:NamedIndividual ,
+                                             <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/aladinDAO
-:aladinDAO rdf:type owl:NamedIndividual ,
-                    <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/aladinDAO> rdf:type owl:NamedIndividual ,
+                                        <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/harmonyDAO
-:harmonyDAO rdf:type owl:NamedIndividual ,
-                     <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/harmonyDAO> rdf:type owl:NamedIndividual ,
+                                         <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/nfDAO
-:nfDAO rdf:type owl:NamedIndividual ,
-                <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/nfDAO> rdf:type owl:NamedIndividual ,
+                                    <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/scribedDAO
-:scribedDAO rdf:type owl:NamedIndividual ,
-                     <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/scribedDAO> rdf:type owl:NamedIndividual ,
+                                         <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/sporkDAO
-:sporkDAO rdf:type owl:NamedIndividual ,
-                   <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
+<http://ghaia.pt/kb/sporkDAO> rdf:type owl:NamedIndividual ,
+                                       <http://ghaia.pt/ontologies/2022/9/dao#DAO> .
 
 
 ###  http://ghaia.pt/kb/#1Hive
