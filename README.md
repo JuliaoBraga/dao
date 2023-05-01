@@ -4,6 +4,8 @@
 
 - **English text:** [https://doi.org/10.31219/osf.io/sr7kt](https://doi.org/10.31219/osf.io/sr7kt "Project for the Development of a Paper on Algorithm and Data Governance")
 
+***decom.ttl*** is the latest version. ***decomV1-0-4.ttl*** is the same file, just stating the version in the name.
+
 You can follow the project through:
 
 1. **Public environment of the project:** [https://doi.org/10.17605/OSF.IO/K35FV](https://doi.org/10.17605/OSF.IO/K35FV)
