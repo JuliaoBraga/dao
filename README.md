@@ -2,7 +2,8 @@
 
 - **Texto em português:** [https://doi.org/10.31219/osf.io/xcpsd] Uma proposta para impulsionar as pesquisas em governança de algoritmos de IA e dados
 
-- **English text:** [https://doi.org/10.31219/osf.io/sr7kt](https://doi.org/10.31219/osf.io/sr7kt "Project for the Development of a Paper on Algorithm and Data Governance")
+- **English text:** [https://doi.org/10.31219/osf.io/sr7kt] A proposal to improve research in AI algorithm and data governance
+- **2023-06-20:** [https://doi.org/10.31219/osf.io/k35fv/] Governance of a DAO for Facilitating Dialogue on Human-Algorithm Interaction and the Impact of Emerging Technologies on Society
 
 ***decom.ttl*** is the latest version. 
 ***decomV1-0-6.ttl*** it is the last version of the ontology from the paper "DAO Ontology"
