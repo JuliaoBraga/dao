@@ -1,4 +1,4 @@
-**This is a public repository associated with the development of a** *Decentralized Autonomous Organization* (DAO) and an ontology in *Decentralized Computing*, as featured in the project below:** 
+**This is a public repository associated with the development of a** *Decentralized Autonomous Organization* (DAO) and an ontology in *Decentralized Computing* **, as featured in the project below:** 
 
 - **Texto em português:** [https://doi.org/10.31219/osf.io/xcpsd] Uma proposta para impulsionar as pesquisas em governança de algoritmos de IA e dados
 
