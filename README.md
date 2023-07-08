@@ -1,6 +1,6 @@
 **This is a pubic repository associated with the development of a** *Decentralize Autonomous Organization* **(DAO) characterized in the project below:** 
 
-- **Texto em português:** [https://doi.org/10.31219/osf.io/xcpsd](Uma proposta para impulsionar as pesquisas em governança de algoritmos de IA e dados)
+- **Texto em português:** [https://doi.org/10.31219/osf.io/xcpsd] Uma proposta para impulsionar as pesquisas em governança de algoritmos de IA e dados
 
 - **English text:** [https://doi.org/10.31219/osf.io/sr7kt](https://doi.org/10.31219/osf.io/sr7kt "Project for the Development of a Paper on Algorithm and Data Governance")
 
