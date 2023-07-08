@@ -6,7 +6,7 @@
 - **2023-06-20:** [https://doi.org/10.31219/osf.io/k35fv/] Governance of a DAO for Facilitating Dialogue on Human-Algorithm Interaction and the Impact of Emerging Technologies on Society
 
 ***decom.ttl*** is the latest version. 
-***decomV1-0-6.ttl*** it is the last version of the ontology from the paper "DAO Ontology"
+***dao.ttl*** is the last version of the ontology from the paper "DAO Ontology"
 
 You can follow the project through:
 
