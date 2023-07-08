@@ -4,7 +4,8 @@
 
 - **English text:** [https://doi.org/10.31219/osf.io/sr7kt](https://doi.org/10.31219/osf.io/sr7kt "Project for the Development of a Paper on Algorithm and Data Governance")
 
-***decom.ttl*** is the latest version. ***decomV1-0-6.ttl*** is the same file, just stating the version in the name.
+***decom.ttl*** is the latest version. 
+***decomV1-0-6.ttl*** it is the last version of the ontology from the paper "DAO Ontology"
 
 You can follow the project through:
 

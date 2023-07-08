@@ -1,0 +1,139 @@
+@prefix : <http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/> .
+
+<http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/hasAcronym
+:hasAcronym rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isAcronymOf ;
+            rdfs:domain :AcronymMeaning ;
+            rdfs:range :AuxiliaryIndividual .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/isAcronymOf
+:isAcronymOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :AuxiliaryIndividual ;
+             rdfs:range :AcronymMeaning .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/AcronymMeaning
+:AcronymMeaning rdf:type owl:Class ;
+                rdfs:subClassOf :Blockchain .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/AuxiliaryIndividual
+:AuxiliaryIndividual rdf:type owl:Class ;
+                     rdfs:subClassOf :Blockchain .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Blockchain
+:Blockchain rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Cryptocurrency
+:Cryptocurrency rdf:type owl:Class ;
+                rdfs:subClassOf :Token .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/DAO
+:DAO rdf:type owl:Class ;
+     rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/DeFi
+:DeFi rdf:type owl:Class ;
+      rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/NFT
+:NFT rdf:type owl:Class ;
+     rdfs:subClassOf :Token .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :Blockchain .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Token
+:Token rdf:type owl:Class ;
+       rdfs:subClassOf :Blockchain .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10#Ethereum
+:Ethereum rdf:type owl:NamedIndividual ,
+                   :AcronymMeaning .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10#1INCH
+<http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10#1INCH> rdf:type owl:NamedIndividual ,
+                                                                                      :Cryptocurrency .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/BTC
+:BTC rdf:type owl:NamedIndividual ,
+              :Cryptocurrency ;
+     :isAcronymOf :Bitcoin .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Bitcoin
+:Bitcoin rdf:type owl:NamedIndividual ,
+                  :AcronymMeaning .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/DAO
+:DAO rdf:type owl:NamedIndividual ,
+              :AuxiliaryIndividual ;
+     :isAcronymOf :DecentralizeAutonomousOrganization .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/DecentralizeAutonomousOrganization
+:DecentralizeAutonomousOrganization rdf:type owl:NamedIndividual ,
+                                             :AcronymMeaning .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/DecentralizeFinance
+:DecentralizeFinance rdf:type owl:NamedIndividual ,
+                              :AcronymMeaning .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/ETH
+:ETH rdf:type owl:NamedIndividual ,
+              :Cryptocurrency ;
+     :isAcronymOf :Ethereum .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/NFT
+:NFT rdf:type owl:NamedIndividual ,
+              :AuxiliaryIndividual ;
+     :isAcronymOf :Non-FungibleToken .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/Non-FungibleToken
+:Non-FungibleToken rdf:type owl:NamedIndividual ,
+                            :AcronymMeaning .
+
+
+###  http://www.semanticweb.org/jb/ontologies/2023/6/untitled-ontology-10/YFI
+:YFI rdf:type owl:NamedIndividual ,
+              :Cryptocurrency .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
