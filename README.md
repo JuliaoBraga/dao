@@ -12,7 +12,7 @@ You can follow the project through:
 
 1. **Public environment of the project:** [https://doi.org/10.17605/OSF.IO/K35FV](https://doi.org/10.17605/OSF.IO/K35FV)
 2. **Through Discord (invite):** [https://discord.gg/nMUdgeUT](https://discord.gg/nMUdgeUT)
-2. **Any question:** *info at ghaia dot pt*
+2. **Any question:** *info AT ghaia DOT pt*
 
 Active project members:
 
